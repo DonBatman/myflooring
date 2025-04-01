@@ -17,6 +17,10 @@ local floor = {
 				{"13","myflooring_flooring13"},
 				{"14","myflooring_flooring14"},
 				{"15","myflooring_flooring15"},
+				{"16","myflooring_flooring16"},
+				{"17","myflooring_flooring17"},
+				{"18","myflooring_flooring18"},
+				{"19","myflooring_flooring19"},
 				}
 
 for i in ipairs(floor) do
@@ -38,7 +42,7 @@ minetest.register_node("myflooring:flooring"..fnum.."_"..mat, {
 	paramtype = "light",
 	sunlight_propagates = true,
 	is_ground_content = true,
-	groups = {cracky = 1},--mygroups,
+	groups = {cracky = 1, not_in_creative_inventory = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 end
