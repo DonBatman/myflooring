@@ -79,6 +79,10 @@ minetest.register_node("myflooring:machine", {
 			"image_button[2.5,5;1,1;myflooring_flooring13.png;flooring13; ]"..
 			"image_button[2.5,6;1,1;myflooring_flooring14.png;flooring14; ]"..
 			"image_button[4,3;1,1;myflooring_flooring15.png;flooring15; ]"..
+			"image_button[4,4;1,1;myflooring_flooring16.png;flooring16; ]"..
+			"image_button[4,5;1,1;myflooring_flooring17.png;flooring17; ]"..
+			"image_button[5.5,1;1,1;myflooring_flooring18.png;flooring18; ]"..
+			"image_button[5.5,2;1,1;myflooring_flooring19.png;flooring19; ]"..
 			"list[current_player;main;1,7;8,4;]")
 		meta:set_string("infotext", "Flooring Machine")
 		local inv = meta:get_inventory()
@@ -105,6 +109,10 @@ minetest.register_node("myflooring:machine", {
 		or fields["flooring13"]
 		or fields["flooring14"]
 		or fields["flooring15"]
+		or fields["flooring16"]
+		or fields["flooring17"]
+		or fields["flooring18"]
+		or fields["flooring19"]
 		then
 
 			if fields["flooring1"] then
@@ -237,6 +245,42 @@ minetest.register_node("myflooring:machine", {
 				make_ok = "0"
 				anzahl = "1"
 				shape = "myflooring:flooring15"
+				if inv:is_empty("flooring") then
+					return
+				end
+			end
+
+			if fields["flooring16"] then
+				make_ok = "0"
+				anzahl = "1"
+				shape = "myflooring:flooring16"
+				if inv:is_empty("flooring") then
+					return
+				end
+			end
+
+			if fields["flooring17"] then
+				make_ok = "0"
+				anzahl = "1"
+				shape = "myflooring:flooring17"
+				if inv:is_empty("flooring") then
+					return
+				end
+			end
+
+			if fields["flooring18"] then
+				make_ok = "0"
+				anzahl = "1"
+				shape = "myflooring:flooring18"
+				if inv:is_empty("flooring") then
+					return
+				end
+			end
+
+			if fields["flooring19"] then
+				make_ok = "0"
+				anzahl = "1"
+				shape = "myflooring:flooring19"
 				if inv:is_empty("flooring") then
 					return
 				end
