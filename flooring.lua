@@ -21,6 +21,17 @@ local floor = {
 				{"17","myflooring_flooring17"},
 				{"18","myflooring_flooring18"},
 				{"19","myflooring_flooring19"},
+				{"20","myflooring_flooring20"},
+				{"21","myflooring_flooring21"},
+				{"22","myflooring_flooring22"},
+				{"23","myflooring_flooring23"},
+				{"24","myflooring_flooring24"},
+				{"25","myflooring_flooring25"},
+				{"26","myflooring_flooring26"},
+				{"27","myflooring_flooring27"},
+				{"28","myflooring_flooring28"},
+				{"29","myflooring_flooring29"},
+				{"30","myflooring_flooring30"},
 				}
 
 for i in ipairs(floor) do
