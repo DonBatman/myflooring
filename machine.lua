@@ -522,7 +522,7 @@ minetest.register_craft({
 		output = 'myflooring:machine',
 		recipe = {
 			{'', '', ''},
-			{'', 'default:steel_flooring', ''},
+			{'', 'default:steel_ingot', ''},
 			{'default:brick', "default:brick", 'default:brick'},
 		},
 })
