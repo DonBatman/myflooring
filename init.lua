@@ -10,6 +10,6 @@ if minetest.get_modpath("hardenedclay") then
 	dofile(minetest.get_modpath("myflooring").."/hardenedclay.lua")
 end
 
-if minetest.get_modpath("ores") then
-	dofile(minetest.get_modpath("myflooring").."/ores.lua")
+if minetest.get_modpath("myores") then
+	dofile(minetest.get_modpath("myflooring").."/myores.lua")
 end
