@@ -65,11 +65,27 @@ myflooring.register_block(
 	"normal"
 	)
 myflooring.register_block(
+	"quartz", 
+	"Quartz", 
+	"myores_quartz.png",
+	{cracky = 1, oddly_breakable_by_hand = 1, not_in_creative_inventory=1},
+	"myores:quartz",
+	"normal"
+	)
+myflooring.register_block(
 	"manganese", 
 	"Manganese", 
 	"myores_manganese.png",
 	{cracky = 1, oddly_breakable_by_hand = 1, not_in_creative_inventory=1},
 	"myores:manganese",
+	"normal"
+	)
+myflooring.register_block(
+	"chalcopyrite", 
+	"Chalcopyrite", 
+	"myores_chalcopyrite.png",
+	{cracky = 1, oddly_breakable_by_hand = 1, not_in_creative_inventory=1},
+	"myores:chalcopyrite",
 	"normal"
 	)
 
