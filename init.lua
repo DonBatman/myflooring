@@ -13,3 +13,7 @@ end
 if minetest.get_modpath("myores") then
 	dofile(minetest.get_modpath("myflooring").."/myores.lua")
 end
+
+if minetest.get_modpath("mywhiteblock") then
+	dofile(minetest.get_modpath("myflooring").."/mywhiteblock.lua")
+end
