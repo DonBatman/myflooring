@@ -1,0 +1,3 @@
+myflooring.hardenedclay (Use hardenedclay) bool true
+myflooring.myores (Use myores) bool true
+myflooring.mywhiteblock (Use mywhiteblock) bool true

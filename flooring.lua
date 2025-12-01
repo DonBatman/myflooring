@@ -38,7 +38,7 @@ for i in ipairs(floor) do
 local fnum = floor[i][1]
 local fmat = floor[i][2]
 
-minetest.register_node("myflooring:flooring"..fnum.."_"..mat, {
+core.register_node("myflooring:flooring"..fnum.."_"..mat, {
 	description = desc.." Flooring",
 	drawtype = drawtype,
 	tiles = {

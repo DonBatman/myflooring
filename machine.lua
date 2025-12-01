@@ -3,7 +3,7 @@ local shape = {}
 local make_ok = {}
 local anzahl = {}
 
-minetest.register_node("myflooring:machine", {
+core.register_node("myflooring:machine", {
 	description = "Flooring Machine",
 	tiles = {
 		"myflooring_machine_top.png",
@@ -38,13 +38,13 @@ minetest.register_node("myflooring:machine", {
 	},
 
 	after_place_node = function(pos, placer)
-		local meta = minetest.get_meta(pos);
+		local meta = core.get_meta(pos);
 			meta:set_string("owner",  (placer:get_player_name() or ""));
 			meta:set_string("infotext",  "Flooring Machine (owned by " .. (placer:get_player_name() or "") .. ")");
 	end,
 
 	can_dig = function(pos,player)
-		local meta = minetest.get_meta(pos);
+		local meta = core.get_meta(pos);
 		local inv = meta:get_inventory()
 			if player:get_player_name() == meta:get_string("owner") and
 				inv:is_empty("flooring") and
@@ -56,7 +56,7 @@ minetest.register_node("myflooring:machine", {
 	end,
 
 	on_construct = function(pos)
-		local meta = minetest.get_meta(pos)
+		local meta = core.get_meta(pos)
 		meta:set_string("formspec", "invsize[10,11;]"..
 			"background[-0.15,-0.25;10.40,11.75;myflooring_background.png]"..
 			"list[current_name;flooring;8,2;1,1;]"..
@@ -102,7 +102,7 @@ minetest.register_node("myflooring:machine", {
 	end,
 
 	on_receive_fields = function(pos, formname, fields, sender)
-		local meta = minetest.get_meta(pos)
+		local meta = core.get_meta(pos)
 		local inv = meta:get_inventory()
 
 		if fields["flooring1"] 
@@ -546,7 +546,7 @@ minetest.register_node("myflooring:machine", {
 	end
 })
 
-minetest.register_craft({
+core.register_craft({
 		output = 'myflooring:machine',
 		recipe = {
 			{'', '', ''},
