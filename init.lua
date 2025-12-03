@@ -14,7 +14,7 @@ if hardenedclay then
 		dofile(core.get_modpath("myflooring").."/hardenedclay.lua")
 	end
 end
-ifmyores then
+if myores then
 	if core.get_modpath("myores") then
 		dofile(core.get_modpath("myflooring").."/myores.lua")
 	end
