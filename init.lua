@@ -24,3 +24,9 @@ if mywhiteblock then
 		dofile(core.get_modpath("myflooring").."/mywhiteblock.lua")
 	end
 end
+
+if core.get_modpath("lucky_block") then
+	lucky_block:add_blocks({
+		{"dro", {"myflooring:machine"}, 1},
+	})
+end
